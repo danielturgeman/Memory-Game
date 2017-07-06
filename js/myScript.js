@@ -117,7 +117,7 @@ var initializeButtons = function (){
          document.getElementById("overlay").style.display = "none";
          document.getElementById("wrong").innerHTML = "";
          wrongAttempts = 0;
-         
+
          shuffleImages(); //reshuffles the image array
          setBoard();    //actually sets the new shuffled images to the cards
     } );
@@ -134,6 +134,21 @@ var displayOverlay = function(){
     initializeButtons();
 }
 
+document.getElementById("new-game2").addEventListener('click', function(){
+
+     for(var i = 0; i < cards.length; i++){
+            cards[i].setAttribute("data-flipped", false);
+            cards[i].style.backgroundImage =  "url('" + question + "')";
+         }
+
+         document.getElementById("wrong").innerHTML = "";
+         wrongAttempts = 0;    
+         shuffleImages();
+         setBoard(); 
+
+});
+
+//setNewGame()
 shuffleImages();
 setBoard();
 
