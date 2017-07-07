@@ -134,7 +134,10 @@ var displayOverlay = function(){
     initializeButtons();
 }
 
-document.getElementById("new-game2").addEventListener('click', function(){
+
+var setNewGameButton = function (){
+
+    document.getElementById("new-game2").addEventListener('click', function(){
 
      for(var i = 0; i < cards.length; i++){
             cards[i].setAttribute("data-flipped", false);
@@ -147,8 +150,9 @@ document.getElementById("new-game2").addEventListener('click', function(){
          setBoard(); 
 
 });
+}
 
-//setNewGame()
+setNewGameButton();
 shuffleImages();
 setBoard();
 
