@@ -80,6 +80,7 @@ var compareCards = function (){ //cardsFlipped will always have 2 cards, compare
 
             wrongAttempts++;
             document.getElementById("wrong").innerHTML = "Wrong attempts: " + wrongAttempts;
+            document.getElementById("wrong").style.visibility = "visible";
         }
 
        cardsFlipped = [];
@@ -112,7 +113,8 @@ var initializeButtons = function (){
          }
          
          document.getElementById("overlay").style.display = "none";
-         document.getElementById("wrong").innerHTML = "";
+         //document.getElementById("wrong").innerHTML = "";
+         document.getElementById("wrong").style.visibility = "hidden";
          wrongAttempts = 0;
 
          shuffleImages(); //reshuffles the image array
@@ -141,7 +143,8 @@ var setNewGameButton = function (){
             cards[i].style.backgroundImage =  "url('" + question + "')";
          }
 
-         document.getElementById("wrong").innerHTML = "";
+         document.getElementById("wrong").style.visibility = "hidden";
+        // document.getElementById("wrong").innerHTML = "";
          wrongAttempts = 0;    
          shuffleImages();
          setBoard(); 

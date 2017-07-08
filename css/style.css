@@ -1,9 +1,9 @@
 body {
-overflow:hidden; 
+overflow-x: hidden;
 background: #000000;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-padding-bottom: 20px;
+padding-bottom: 50px;
 }
 
 div#container {
@@ -76,6 +76,10 @@ h1#welcome,
 h3#wrong{
     color: #3D8CFF;
     text-align: center;
+}
+
+h3#wrong{
+    visibility: hidden;
 }
 
 button#new-game2 {
