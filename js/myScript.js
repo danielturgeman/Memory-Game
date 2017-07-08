@@ -1,8 +1,5 @@
 // starting prototype JS code, to begin with
 // boolean flipped = false(question) when we flip, set true, background img.
-//to randomize create an array of integers like index = [0,0,1,1,2,2,3,3,4,4,5,5]
-// use random function to somehow gets numbers from 0 to 5, assign them as the index of image[],
-//but also we need to remove the index of the images, but thats only if they match
 //also need to work on cards[] array and set their flipped values to true if they match
 
 
@@ -155,5 +152,3 @@ var setNewGameButton = function (){
 setNewGameButton();
 shuffleImages();
 setBoard();
-
-
